@@ -8,26 +8,13 @@ var burger = require("../models/burger.js");
 
 
 router.get("/", function(request, response) {
-    burger.all(function(data) {
-      var burgerData = {
-        burger: data
-      };
-      console.log(burgerData);
-      response.render("index", burgerData);
+    burger.all(function(burger_data) {
+      console.log(burger_data);
+      response.render("index", {burger_data});
     });
   });
-  
 
-  router.post("/api/burger", function(request, response) {
 
-  });
 
-  router.put("/api/burger/:id", function(request, response) {
-
-  });
-
-  router.delete("api/burger/id", function(request, response) {
-
-  });
-
-  module.exports = router;
+module.exports = router;
+ 

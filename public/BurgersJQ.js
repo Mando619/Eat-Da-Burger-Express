@@ -1,4 +1,9 @@
-$("#btn btn-primary").on("click", function(event) {
-    event.preventDefault();
-    
-});
+//$("#btn btn-primary").on("submit", function(event) {
+   // event.preventDefault();
+
+  //  var newBurger = {
+  //      name: $("#burger_id").val().trim(),
+        
+ //   }
+
+//});

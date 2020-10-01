@@ -1,49 +1,18 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 text-center" id="top-bar">
-            <img src="/public/assets/img/cheeseburger.jpg" alt="cheese burger" class="burger">
-            <h1>Eat-Da-Burrrrger</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 text-center" class="task">
-            <div class="row">
-                  {{#each burger_data}}
-			  	{{#unless this.devoured}}
-                  <div class="col-xs-9 text-center">
-                      <pre>
-                          {{this.id}} {{this.burger_name}}
-                      </pre>
-                  </div>
-                  <div class="col-xs-3 text-center">
-                      <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
-						<input input type="hidden" type="text" name="burger_id" value={{this.id}}><br>
-						<button type="submit" class="btn btn-default">Devour it!</button>
-					</form>
-
-                  </div>
-            <	{{/unless}}
-			  {{/each}}
-			</div>
-		</div>
-		<div class="col-xs-6 text-center" class="task">
-			  {{#each burger_data}}
-			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}}">
-				{{/if}}
-			  {{/each}}
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12 text-center enter_section">
-			<form action="/burgers/create" method="POST">
-				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
-			</form>
-			<p>Enter a burger you would like to eat. Click the "Submit" button.</p>
-		</div>
-	</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Eat-da-burger</title>
+		<meta charset="UTF-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+		<!-- My Stylesheet -->
+		<link rel="stylesheet" href="static/assets/css/style.css" type="text/css" />
+	</head>
+	<body>
+		{{{ body }}}
+	</body>
+</HTML>
