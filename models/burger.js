@@ -2,12 +2,17 @@ var orm = require("../config/orm.js");
 
 
 var burger = {
-    all: function(callBack) {
-        orm.all("burgers", function(response){
+    selectAll: function(callBack) {
+        orm.selectAll("burgers", function(response){
             callBack(response);
         })
-    }
+    },
+
+    insertOne: function(name, callBack) {
+        orm.insertOne("burgers", 
+        ["burger_name", "devoured"],[name, false],callBack);
+        console.log(name);
+    },
+
 }
-
-
 module.exports = burger;

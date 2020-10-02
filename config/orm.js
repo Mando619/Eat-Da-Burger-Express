@@ -5,7 +5,7 @@ function printQuestionMarks(num) {
     var array = [];
   
     for (var i = 0; i < num; i++) {
-      array.push("");
+      array.push("?");
     }
   
     return array.toString();
@@ -28,16 +28,16 @@ function printQuestionMarks(num) {
     return array.toString();
   }
   var orm = {
-    all: function(tableInput, callBack) {
+    selectAll: function(tableInput, callBack) {
       var queryString = "SELECT * FROM " + tableInput + ";";
-      connection.query(queryString, function(err, result) {
-        if (err) {
-          throw err;
+      connection.query(queryString, function(error, result) {
+        if (error) {
+          throw error;
         }
         callBack(result);
       });
     },
-    create: function(table, cols, vals, callBack) {
+    insertOne: function(table, cols, vals, callBack) {
       var queryString = "INSERT INTO " + table;
   
       queryString += " (";
@@ -49,16 +49,16 @@ function printQuestionMarks(num) {
   
       console.log(queryString);
   
-      connection.query(queryString, vals, function(err, result) {
-        if (err) {
-          throw err;
+      connection.query(queryString, vals, function(error, result) {
+        if (error) {
+          throw error;
         }
   
         callBack(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
-    update: function(table, objColVals, condition, callBack) {
+    
+    updateOne: function(table, objColVals, condition, callBack) {
       var queryString = "UPDATE " + table;
   
       queryString += " SET ";
@@ -67,9 +67,9 @@ function printQuestionMarks(num) {
       queryString += condition;
   
       console.log(queryString);
-      connection.query(queryString, function(err, result) {
-        if (err) {
-          throw err;
+      connection.query(queryString, function(error, result) {
+        if (error) {
+          throw error;
         }
   
         callBack(result);
