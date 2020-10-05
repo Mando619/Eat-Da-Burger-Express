@@ -1,15 +1,19 @@
-var express = require("express");
+const express = require("express");
 
 const PORT = process.env.PORT || 8080;
 
-var app = express();
+const app = express();
+
+const methodOverride = require('method-override');
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
 // Parse application body as JSON
+// method overide for posting and deleting.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(methodOverride('_method'));
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
