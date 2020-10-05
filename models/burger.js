@@ -6,7 +6,7 @@ var burger = {
         orm.selectAll("burgers",
          function (response) {
             callBack(response);
-        })
+        });
     },
     // giving boolean value to devoured
     insertOne: function (name, callBack) {
@@ -17,9 +17,9 @@ var burger = {
     },
     // giving  boolean value to devoured
     updateOne: function (id, callBack) {
-        var condition = "id =" + id;
+        var newId = "id =" + id;
         orm.updateOne("burgers",
-        { devoured: true }, condition, callBack);
+        { devoured: true }, newId, callBack);
         console.log(id);
     }
 };

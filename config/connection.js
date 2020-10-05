@@ -1,19 +1,11 @@
-var mysql = require("mysql");
+const mysql = require("mysql");
+const dbConfig = require("./db.config.js");
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "arm575",
-  database: "burgers_db"
-});
-
-connection.connect(function(err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
-  console.log("connected as id " + connection.threadId);
+var connection = mysql.createPool({
+  host: dbConfig.HOST,
+  user: dbConfig.USER,
+  password: dbConfig.PASSWORD,
+  database: dbConfig.DB
 });
 
 module.exports = connection;
