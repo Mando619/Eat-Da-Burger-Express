@@ -8,6 +8,8 @@ This appliction is used for storing and deleted data on a preference of what bur
 
 ## DEMO 
 
+![2020-10-05 (5)](https://user-images.githubusercontent.com/65925169/95142576-db0bc500-0728-11eb-9f70-4ad58648f8ab.png)
+
 [Link to deployed application](https://polar-earth-66617.herokuapp.com/)
 
 
