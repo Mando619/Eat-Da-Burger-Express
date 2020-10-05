@@ -8,7 +8,7 @@ This appliction is used for storing and deleted data on a preference of what bur
 
 ## DEMO 
 
-[Link to video of running application](https://polar-earth-66617.herokuapp.com/)
+[Link to deployed application](https://polar-earth-66617.herokuapp.com/)
 
 
 ## Installation 
