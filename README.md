@@ -26,7 +26,7 @@ use your node server.js in the CLI to begin everything.
 * [JavaScript- Code that gives functionality of functions for implementing promtps in this application]
 * [MYSQL- Is a Relational database management system based on SQL(Structured 
     Query Language). Helps to store and query data for this application.]
-* [Express-Handlebars- A templaying engine for web applications. It is used on the server side using express.js framework]
+* [Express-Handlebars- A templating engine for web applications. It is used on the server side using express.js framework]
 
 
 ## Questions 
