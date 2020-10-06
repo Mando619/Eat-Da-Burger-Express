@@ -15,8 +15,7 @@ This appliction is used for storing and deleted data on a preference of what bur
 
 ## Installation 
 
-Npm will need installation . You can do so by installing it in in your CLI. Once finished,
-use your node server.js in the CLI to begin everything.
+No installation needed.  
 
 ## Technologies Used
 
