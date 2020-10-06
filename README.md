@@ -28,6 +28,11 @@ use your node server.js in the CLI to begin everything.
     Query Language). Helps to store and query data for this application.]
 * [Express-Handlebars- A templating engine for web applications. It is used on the server side using express.js framework]
 
+## Credits
+
+* [Plover Brown](https://github.com/rebgrasshopper)
+* [Clyde Baron](https://github.com/clydebaron2000)
+
 
 ## Questions 
 
