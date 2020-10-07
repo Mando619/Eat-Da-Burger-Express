@@ -4,7 +4,7 @@
 
 ## Description
 
-This appliction is used for storing and deleted data on a preference of what burger you would like to eat. Using mysql, and CLI, the user is able to write a description of what they want to eat. Through the CLI, an html templated will be generated using express, express-handlebars. When adding a burger, the data will be stored in mysql database. If deleting an object, it will be removed from data base, and posted adjacent to the burgers you entered. 
+This appliction is used for storing and deleted data on a preference of what burger you would like to eat. Using MYSQL, Express, and Node.js, the user is able to write a description of what they want to eat. Through the deployed application, an html templated will be generated using express, express-handlebars. When adding a burger, the data will be stored in mysql database. If deleting an object, it will be removed from data base, and posted adjacent to the burgers you entered. 
 
 ## DEMO 
 
