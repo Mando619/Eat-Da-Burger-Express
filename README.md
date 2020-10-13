@@ -19,6 +19,7 @@ No installation needed.
 
 ## Technologies Used
 
+* [Method-Override- Middleware used for PUT and DELETE to be used with submission on HTML. The query override is used in the html form action. ]
 * [Express- Web application server framework through node.js. It is designed for building 
     single page, multi page, and hybrid web applications.]
 * [Node.js- Used for executing JavaScript coding to build a CLI for server-side scripting]
